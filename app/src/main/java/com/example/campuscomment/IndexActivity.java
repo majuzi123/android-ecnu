@@ -20,4 +20,16 @@ public class IndexActivity extends AppCompatActivity {
         //执行意图
         startActivity(intent);
     }
+
+    public void dailyinfo(View view) {
+        Intent intent=new Intent(IndexActivity.this,DailyInfoActivity.class);
+        //执行意图
+        startActivity(intent);
+    }
+
+    public void cateenInfo(View view) {
+        Intent intent=new Intent(IndexActivity.this,CateenInfoActivity.class);
+        //执行意图
+        startActivity(intent);
+    }
 }

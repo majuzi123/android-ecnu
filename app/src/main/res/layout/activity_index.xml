@@ -109,6 +109,7 @@
            android:layout_height="200dp"
            android:src="@drawable/food"
            android:layout_marginLeft="20dp"
+           android:onClick="cateenInfo"
            ></ImageView>
                 <TextView
                     android:layout_width="wrap_content"
@@ -308,6 +309,7 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:src="@drawable/praise"
+            android:onClick="dailyinfo"
             ></ImageView>
         <TextView
             android:layout_width="wrap_content"
