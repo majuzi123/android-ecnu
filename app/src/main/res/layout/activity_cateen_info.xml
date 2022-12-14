@@ -30,7 +30,7 @@
             android:layout_height="300dp"
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
-            android:src="@drawable/food"></ImageView>
+            android:src="@drawable/cateen1"></ImageView>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -73,14 +73,14 @@
                     <ImageView
                         android:layout_width="200dp"
                         android:layout_height="200dp"
-                        android:src="@drawable/food"
+                        android:src="@drawable/food1"
                         android:layout_marginLeft="20dp"
                         android:onClick="cateenInfo"
                         ></ImageView>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="石锅拌饭"
+                        android:text="五谷鱼粉"
                         android:textSize="20dp"
                         android:layout_gravity="center"
                         ></TextView>
@@ -93,13 +93,13 @@
                     <ImageView
                         android:layout_width="200dp"
                         android:layout_height="200dp"
-                        android:src="@drawable/food"
+                        android:src="@drawable/food2"
                         android:layout_marginLeft="20dp"
                         ></ImageView>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="中北秋林阁"
+                        android:text="油泼面"
                         android:textSize="20dp"
                         android:layout_gravity="center"
                         ></TextView>
@@ -112,13 +112,13 @@
                     <ImageView
                         android:layout_width="200dp"
                         android:layout_height="200dp"
-                        android:src="@drawable/food"
+                        android:src="@drawable/food3"
                         android:layout_marginLeft="20dp"
                         ></ImageView>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="中北秋林阁"
+                        android:text="牛肉面"
                         android:textSize="20dp"
                         android:layout_gravity="center"
                         ></TextView>
@@ -131,13 +131,13 @@
                     <ImageView
                         android:layout_width="200dp"
                         android:layout_height="200dp"
-                        android:src="@drawable/food"
+                        android:src="@drawable/food4"
                         android:layout_marginLeft="20dp"
                         ></ImageView>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="中北秋林阁"
+                        android:text="蛋包饭"
                         android:textSize="20dp"
                         android:layout_gravity="center"
                         ></TextView>

@@ -122,13 +122,75 @@
                       android:layout_width="match_parent"
 
                       android:layout_height="200dp"
-                      android:src="@drawable/food"
+                      android:src="@drawable/food2"
                       android:layout_marginLeft="20dp"
                       ></ImageView>
                   <TextView
                       android:layout_width="match_parent"
                       android:layout_height="wrap_content"
-                      android:text="披萨"
+                      android:text="油泼面"
+                      android:gravity="center"
+                      android:textSize="20dp"
+                      ></TextView>
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:text="评分：4.2"
+                      android:gravity="center"
+                      android:textSize="20dp"
+                      ></TextView>
+              </LinearLayout>
+          </LinearLayout>
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              >
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:layout_weight="1"
+                  >
+                  <ImageView
+                      android:layout_width="match_parent"
+
+                      android:layout_height="200dp"
+                      android:src="@drawable/food1"
+                      android:layout_marginLeft="20dp"
+                      ></ImageView>
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:text="五谷鱼粉"
+                      android:gravity="center"
+                      android:textSize="20dp"
+                      ></TextView>
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:text="评分：3.8"
+                      android:gravity="center"
+                      android:textSize="20dp"
+                      ></TextView>
+              </LinearLayout>
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:layout_weight="1"
+                  >
+                  <ImageView
+                      android:layout_width="match_parent"
+
+                      android:layout_height="200dp"
+                      android:src="@drawable/food3"
+                      android:layout_marginLeft="20dp"
+                      ></ImageView>
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:text="牛肉面"
                       android:gravity="center"
                       android:textSize="20dp"
                       ></TextView>
@@ -156,20 +218,20 @@
                       android:layout_width="match_parent"
 
                       android:layout_height="200dp"
-                      android:src="@drawable/food"
+                      android:src="@drawable/food4"
                       android:layout_marginLeft="20dp"
                       ></ImageView>
                   <TextView
                       android:layout_width="match_parent"
                       android:layout_height="wrap_content"
-                      android:text="披萨"
+                      android:text="蛋包饭"
                       android:gravity="center"
                       android:textSize="20dp"
                       ></TextView>
                   <TextView
                       android:layout_width="match_parent"
                       android:layout_height="wrap_content"
-                      android:text="评分：4.0"
+                      android:text="评分：4.5"
                       android:gravity="center"
                       android:textSize="20dp"
                       ></TextView>
@@ -184,82 +246,20 @@
                       android:layout_width="match_parent"
 
                       android:layout_height="200dp"
-                      android:src="@drawable/food"
+                      android:src="@drawable/food5"
                       android:layout_marginLeft="20dp"
                       ></ImageView>
                   <TextView
                       android:layout_width="match_parent"
                       android:layout_height="wrap_content"
-                      android:text="披萨"
+                      android:text="麻辣烫"
                       android:gravity="center"
                       android:textSize="20dp"
                       ></TextView>
                   <TextView
                       android:layout_width="match_parent"
                       android:layout_height="wrap_content"
-                      android:text="评分：4.0"
-                      android:gravity="center"
-                      android:textSize="20dp"
-                      ></TextView>
-              </LinearLayout>
-          </LinearLayout>
-          <LinearLayout
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:orientation="horizontal"
-              >
-              <LinearLayout
-                  android:layout_width="match_parent"
-                  android:layout_height="wrap_content"
-                  android:orientation="vertical"
-                  android:layout_weight="1"
-                  >
-                  <ImageView
-                      android:layout_width="match_parent"
-
-                      android:layout_height="200dp"
-                      android:src="@drawable/food"
-                      android:layout_marginLeft="20dp"
-                      ></ImageView>
-                  <TextView
-                      android:layout_width="match_parent"
-                      android:layout_height="wrap_content"
-                      android:text="披萨"
-                      android:gravity="center"
-                      android:textSize="20dp"
-                      ></TextView>
-                  <TextView
-                      android:layout_width="match_parent"
-                      android:layout_height="wrap_content"
-                      android:text="评分：4.0"
-                      android:gravity="center"
-                      android:textSize="20dp"
-                      ></TextView>
-              </LinearLayout>
-              <LinearLayout
-                  android:layout_width="match_parent"
-                  android:layout_height="wrap_content"
-                  android:orientation="vertical"
-                  android:layout_weight="1"
-                  >
-                  <ImageView
-                      android:layout_width="match_parent"
-
-                      android:layout_height="200dp"
-                      android:src="@drawable/food"
-                      android:layout_marginLeft="20dp"
-                      ></ImageView>
-                  <TextView
-                      android:layout_width="match_parent"
-                      android:layout_height="wrap_content"
-                      android:text="披萨"
-                      android:gravity="center"
-                      android:textSize="20dp"
-                      ></TextView>
-                  <TextView
-                      android:layout_width="match_parent"
-                      android:layout_height="wrap_content"
-                      android:text="评分：4.0"
+                      android:text="评分：3.9"
                       android:gravity="center"
                       android:textSize="20dp"
                       ></TextView>
