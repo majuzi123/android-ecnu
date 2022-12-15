@@ -11,7 +11,7 @@
         android:layout_marginTop="50dp"
         android:layout_width="300dp"
         android:layout_height="300dp"
-        android:src="@drawable/app"
+        android:src="@drawable/food"
         android:layout_gravity="center"
         ></ImageView>
     <TextView
