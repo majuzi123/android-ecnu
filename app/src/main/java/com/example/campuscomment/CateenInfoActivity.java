@@ -16,69 +16,48 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 
 public class CateenInfoActivity extends AppCompatActivity {
-    private TextView cateenname;
-    private TextView address;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cateen_info);
-        cateenname=findViewById(R.id.cateenname);
-        address=findViewById(R.id.address);
-        sendRequestWithHttpURLConnection();
-    }
 
-    private void sendRequestWithHttpURLConnection() {
-        // 开启线程来发起网络请求
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                HttpURLConnection connection = null;
-                BufferedReader reader = null;
-                try {
-                    Log.d("MainActivity", "HttpURLConnection connecting ");
-                    URL url = new URL("https://www.baidu.com");
-                    connection = (HttpURLConnection) url.openConnection();
-                    connection.setRequestMethod("GET");
-                    connection.setConnectTimeout(180000);
-                    connection.setReadTimeout(180000);
-                    InputStream in = connection.getInputStream();
-                    //下面对获取到的输入流进行读取
-                    reader = new BufferedReader(new InputStreamReader(in));
-                    StringBuilder response = new StringBuilder();
-                    String line;
-                    Log.d("MainActivity", "HttpURLConnection get result ");
-                    while ((line = reader.readLine()) != null) {
-                        response.append(line);
-                    }
-                    Log.d("MainActivity", "display result ");
-                    Log.d("MainActivity", response.toString());
-                    showResponse(response.toString());
-                } catch (Exception e) {
-                    e.printStackTrace();
-                } finally {
-                    if (reader != null) {
-                        try {
-                            reader.close();
-                        } catch (IOException e) {
-                            e.printStackTrace();
-                        }
-                    }
-                    if (connection != null) {
-                        connection.disconnect();
-                    }
-                }
-            }
-        }).start();
+        //处理从上一个页面获得的数据
+        Intent intent = getIntent();
+        String cateenname = intent.getStringExtra("cateenname");
+
+        //页面需要的数据
+        cateen c = new cateen();
+        food [] f = new food[4];
+        f[0] = new food();
+        f[1] = new food();
+        f[2] = new food();
+        f[3] = new food();
+        Integer mynum = 0;
+
+        //从数据库获取数据，放到上面的数据库存中
+        c.setName(cateenname);
+
+        //调用函数刷新数据
+        Update(c,f,mynum);
     }
-    private void showResponse(final String response) {
-        runOnUiThread(new Runnable() {
-            @Override
-            public void run() {
-                // 在这里进行UI操作，将结果显示到界面上
-                //cateenname.setText(response);
-               // address.setText(response);
-            }
-        });
+    //调用这个函数会刷新数据
+    public void Update(cateen c,food f[],Integer mynum){
+        //从页面获取组件
+        TextView cateenname = findViewById(R.id.cateenname);
+        TextView othernum = findViewById(R.id.othernumber);
+        TextView myNum = findViewById(R.id.myNumber);
+        TextView food1 = findViewById(R.id.food1);
+        TextView food2 = findViewById(R.id.food2);
+        TextView food3 = findViewById(R.id.food3);
+        TextView food4 = findViewById(R.id.food4);
+        //赋值
+        cateenname.setText(c.name);
+        othernum.setText(c.num.toString());
+        myNum.setText(mynum.toString());
+        food1.setText(f[0].name);
+        food2.setText(f[1].name);
+        food3.setText(f[2].name);
+        food4.setText(f[3].name);
     }
 
     public void dietInfo(View view) {

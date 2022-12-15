@@ -5,6 +5,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
+
+import org.w3c.dom.Text;
 
 public class IndexActivity extends AppCompatActivity {
 
@@ -29,6 +32,10 @@ public class IndexActivity extends AppCompatActivity {
 
     public void cateenInfo(View view) {
         Intent intent=new Intent(IndexActivity.this,CateenInfoActivity.class);
+        TextView t = (TextView)view;
+        String cateenname = t.getText().toString();
+        intent.putExtra("cateenname",cateenname);
+        System.out.println(cateenname);
         //执行意图
         startActivity(intent);
     }
