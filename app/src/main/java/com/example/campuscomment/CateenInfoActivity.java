@@ -36,16 +36,12 @@ public class CateenInfoActivity extends AppCompatActivity {
     public void Update(cateen c,food f[],Integer mynum){
         //从页面获取组件
         TextView cateenname = findViewById(R.id.cateenname);
-        TextView othernum = findViewById(R.id.othernumber);
-        TextView myNum = findViewById(R.id.myNumber);
         TextView food1 = findViewById(R.id.food1);
         TextView food2 = findViewById(R.id.food2);
         TextView food3 = findViewById(R.id.food3);
         TextView food4 = findViewById(R.id.food4);
         //赋值
         cateenname.setText(c.name);
-        othernum.setText(c.num.toString());
-        myNum.setText(mynum.toString());
         food1.setText(f[0].name);
         food2.setText(f[1].name);
         food3.setText(f[2].name);

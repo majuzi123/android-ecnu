@@ -130,51 +130,5 @@
                 </LinearLayout>
             </LinearLayout>
         </HorizontalScrollView>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            >
-            <TextView
-                android:layout_marginTop="10dp"
-                android:layout_width="200dp"
-                android:layout_height="wrap_content"
-                android:text="大众评分："
-                android:textSize="40dp"
-
-                ></TextView>
-            <TextView
-                android:id="@+id/othernumber"
-                android:layout_marginTop="10dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="number"
-                android:textSize="40dp"
-
-                ></TextView>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            >
-            <TextView
-                android:layout_marginTop="10dp"
-                android:layout_width="200dp"
-                android:layout_height="wrap_content"
-                android:text="我的评分："
-                android:textSize="40dp"
-                ></TextView>
-
-            <EditText
-                android:id="@+id/myNumber"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:inputType="number"
-                android:hint="请输入评分(0-5)"
-                android:textSize="40dp"
-                ></EditText>
-        </LinearLayout>
     </LinearLayout>
 </ScrollView>
