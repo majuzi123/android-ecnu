@@ -95,7 +95,7 @@
                   android:layout_height="200dp"
                   android:src="@drawable/food"
                   android:layout_marginLeft="20dp"
-                  android:onClick="dietInfo"
+
                   ></ImageView>
                   <TextView
                       android:layout_width="match_parent"
@@ -103,6 +103,7 @@
                       android:text="披萨"
                       android:gravity="center"
                       android:textSize="20dp"
+                      android:onClick="dietInfo"
                       ></TextView>
                   <TextView
                       android:layout_width="match_parent"
@@ -124,7 +125,6 @@
                       android:layout_height="200dp"
                       android:src="@drawable/food2"
                       android:layout_marginLeft="20dp"
-                      android:onClick="dietInfo"
                       ></ImageView>
                   <TextView
                       android:layout_width="match_parent"
@@ -132,6 +132,7 @@
                       android:text="油泼面"
                       android:gravity="center"
                       android:textSize="20dp"
+                      android:onClick="dietInfo"
                       ></TextView>
                   <TextView
                       android:layout_width="match_parent"
@@ -159,7 +160,6 @@
                       android:layout_height="200dp"
                       android:src="@drawable/food1"
                       android:layout_marginLeft="20dp"
-                      android:onClick="dietInfo"
                       ></ImageView>
                   <TextView
                       android:layout_width="match_parent"
@@ -167,6 +167,7 @@
                       android:text="五谷鱼粉"
                       android:gravity="center"
                       android:textSize="20dp"
+                      android:onClick="dietInfo"
                       ></TextView>
                   <TextView
                       android:layout_width="match_parent"
@@ -184,11 +185,9 @@
                   >
                   <ImageView
                       android:layout_width="match_parent"
-
                       android:layout_height="200dp"
                       android:src="@drawable/food3"
                       android:layout_marginLeft="20dp"
-                      android:onClick="dietInfo"
                       ></ImageView>
                   <TextView
                       android:layout_width="match_parent"
@@ -196,6 +195,7 @@
                       android:text="牛肉面"
                       android:gravity="center"
                       android:textSize="20dp"
+                      android:onClick="dietInfo"
                       ></TextView>
                   <TextView
                       android:layout_width="match_parent"
@@ -223,7 +223,6 @@
                       android:layout_height="200dp"
                       android:src="@drawable/food4"
                       android:layout_marginLeft="20dp"
-                      android:onClick="dietInfo"
                       ></ImageView>
                   <TextView
                       android:layout_width="match_parent"
@@ -231,6 +230,7 @@
                       android:text="蛋包饭"
                       android:gravity="center"
                       android:textSize="20dp"
+                      android:onClick="dietInfo"
                       ></TextView>
                   <TextView
                       android:layout_width="match_parent"
@@ -252,7 +252,6 @@
                       android:layout_height="200dp"
                       android:src="@drawable/food5"
                       android:layout_marginLeft="20dp"
-                      android:onClick="dietInfo"
                       ></ImageView>
                   <TextView
                       android:layout_width="match_parent"
@@ -260,6 +259,7 @@
                       android:text="麻辣烫"
                       android:gravity="center"
                       android:textSize="20dp"
+                      android:onClick="dietInfo"
                       ></TextView>
                   <TextView
                       android:layout_width="match_parent"

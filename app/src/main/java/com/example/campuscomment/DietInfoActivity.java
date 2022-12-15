@@ -18,9 +18,8 @@ public class DietInfoActivity extends AppCompatActivity {
         Intent i = getIntent();
         String ret = i.getStringExtra("result");
         String str[] = ret.split(" ");
-        tvFN = findViewById(R.id.fname);
-        tvAD = findViewById(R.id.address);
-        tvRK = findViewById(R.id.otherR);
+        System.out.println(str[1]);
+        System.out.println(str[2]);
         tvFN.setText(str[0]);
         tvAD.setText(str[1]);
         tvRK.setText(str[2]);

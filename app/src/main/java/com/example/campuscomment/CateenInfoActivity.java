@@ -2,12 +2,16 @@ package com.example.campuscomment;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
+import android.os.Message;
 import android.view.View;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 public class CateenInfoActivity extends AppCompatActivity {
+    private Handler handler;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,15 +46,16 @@ public class CateenInfoActivity extends AppCompatActivity {
         TextView food4 = findViewById(R.id.food4);
         //赋值
         cateenname.setText(c.name);
-        food1.setText(f[0].name);
+        food1.setText("Food");
         food2.setText(f[1].name);
         food3.setText(f[2].name);
         food4.setText(f[3].name);
     }
-
     public void dietInfo(View view) {
-        Intent intent=new Intent(CateenInfoActivity.this,DietInfoActivity.class);
         //执行意图
-        startActivity(intent);
+        TextView t = (TextView)view;
+        String foodname = t.getText().toString();
     }
+
+
 }

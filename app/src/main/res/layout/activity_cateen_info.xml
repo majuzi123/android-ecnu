@@ -54,7 +54,6 @@
                         android:layout_height="200dp"
                         android:src="@drawable/food1"
                         android:layout_marginLeft="20dp"
-                        android:onClick="dietInfo"
                         ></ImageView>
                     <TextView
                         android:id="@+id/food1"
@@ -63,6 +62,7 @@
                         android:text="五谷鱼粉"
                         android:textSize="20dp"
                         android:layout_gravity="center"
+                        android:onClick="dietInfo"
                         ></TextView>
                 </LinearLayout>
                 <LinearLayout
@@ -84,6 +84,7 @@
                         android:text="油泼面"
                         android:textSize="20dp"
                         android:layout_gravity="center"
+                        android:onClick="dietInfo"
                         ></TextView>
                 </LinearLayout>
                 <LinearLayout
@@ -105,6 +106,7 @@
                         android:text="牛肉面"
                         android:textSize="20dp"
                         android:layout_gravity="center"
+                        android:onClick="dietInfo"
                         ></TextView>
                 </LinearLayout>
                 <LinearLayout
@@ -126,6 +128,7 @@
                         android:text="蛋包饭"
                         android:textSize="20dp"
                         android:layout_gravity="center"
+                        android:onClick="dietInfo"
                         ></TextView>
                 </LinearLayout>
             </LinearLayout>

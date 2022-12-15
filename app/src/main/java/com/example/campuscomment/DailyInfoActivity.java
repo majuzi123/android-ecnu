@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
 
 public class DailyInfoActivity extends AppCompatActivity {
 
@@ -17,6 +18,7 @@ public class DailyInfoActivity extends AppCompatActivity {
     public void dietInfo(View view) {
         Intent intent=new Intent(DailyInfoActivity.this,DietInfoActivity.class);
         //执行意图
-        startActivity(intent);
+        TextView t = (TextView)view;
+        String foodname = t.getText().toString();
     }
 }
