@@ -32,4 +32,10 @@ public class IndexActivity extends AppCompatActivity {
         //执行意图
         startActivity(intent);
     }
+
+    public void dietinfo(View view) {
+        Intent intent=new Intent(IndexActivity.this,DietInfoActivity.class);
+        //执行意图
+        startActivity(intent);
+    }
 }

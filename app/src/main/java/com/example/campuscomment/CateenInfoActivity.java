@@ -2,8 +2,10 @@ package com.example.campuscomment;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.TextView;
 
 import java.io.BufferedReader;
@@ -24,6 +26,7 @@ public class CateenInfoActivity extends AppCompatActivity {
         address=findViewById(R.id.address);
         sendRequestWithHttpURLConnection();
     }
+
     private void sendRequestWithHttpURLConnection() {
         // 开启线程来发起网络请求
         new Thread(new Runnable() {
@@ -76,5 +79,11 @@ public class CateenInfoActivity extends AppCompatActivity {
                // address.setText(response);
             }
         });
+    }
+
+    public void dietInfo(View view) {
+        Intent intent=new Intent(CateenInfoActivity.this,DietInfoActivity.class);
+        //执行意图
+        startActivity(intent);
     }
 }

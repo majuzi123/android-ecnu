@@ -124,6 +124,7 @@
                       android:layout_height="200dp"
                       android:src="@drawable/food2"
                       android:layout_marginLeft="20dp"
+                      android:onClick="dietInfo"
                       ></ImageView>
                   <TextView
                       android:layout_width="match_parent"
@@ -158,6 +159,7 @@
                       android:layout_height="200dp"
                       android:src="@drawable/food1"
                       android:layout_marginLeft="20dp"
+                      android:onClick="dietInfo"
                       ></ImageView>
                   <TextView
                       android:layout_width="match_parent"
@@ -186,6 +188,7 @@
                       android:layout_height="200dp"
                       android:src="@drawable/food3"
                       android:layout_marginLeft="20dp"
+                      android:onClick="dietInfo"
                       ></ImageView>
                   <TextView
                       android:layout_width="match_parent"
@@ -220,6 +223,7 @@
                       android:layout_height="200dp"
                       android:src="@drawable/food4"
                       android:layout_marginLeft="20dp"
+                      android:onClick="dietInfo"
                       ></ImageView>
                   <TextView
                       android:layout_width="match_parent"
@@ -248,6 +252,7 @@
                       android:layout_height="200dp"
                       android:src="@drawable/food5"
                       android:layout_marginLeft="20dp"
+                      android:onClick="dietInfo"
                       ></ImageView>
                   <TextView
                       android:layout_width="match_parent"

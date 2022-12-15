@@ -129,6 +129,7 @@
                     android:layout_height="200dp"
                     android:src="@drawable/cateen2"
                     android:layout_marginLeft="20dp"
+                    android:onClick="cateenInfo"
                     ></ImageView>
                 <TextView
                     android:layout_width="wrap_content"
@@ -148,6 +149,7 @@
                     android:layout_height="200dp"
                     android:src="@drawable/cateen3"
                     android:layout_marginLeft="20dp"
+                    android:onClick="cateenInfo"
                     ></ImageView>
                 <TextView
                     android:layout_width="wrap_content"
@@ -204,6 +206,7 @@
                         android:layout_height="200dp"
                         android:src="@drawable/food1"
                         android:layout_marginLeft="20dp"
+                        android:onClick="dietinfo"
                         ></ImageView>
                     <TextView
                         android:layout_width="wrap_content"
@@ -223,6 +226,7 @@
                         android:layout_height="200dp"
                         android:src="@drawable/food2"
                         android:layout_marginLeft="20dp"
+                        android:onClick="dietinfo"
                         ></ImageView>
                     <TextView
                         android:layout_width="wrap_content"
@@ -242,6 +246,7 @@
                         android:layout_height="200dp"
                         android:src="@drawable/food3"
                         android:layout_marginLeft="20dp"
+                        android:onClick="dietinfo"
                         ></ImageView>
                     <TextView
                         android:layout_width="wrap_content"
@@ -261,6 +266,7 @@
                         android:layout_height="200dp"
                         android:src="@drawable/food"
                         android:layout_marginLeft="20dp"
+                        android:onClick="dietinfo"
                         ></ImageView>
                     <TextView
                         android:layout_width="wrap_content"

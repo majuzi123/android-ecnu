@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
                 BufferedReader reader = null;
                 try {
                     Log.d("MainActivity", "HttpURLConnection connecting ");
-                    URL url = new URL("https://www.baidu.com");
+                    URL url = new URL("https://sei-test.021hqit.com");
                     connection = (HttpURLConnection) url.openConnection();
                     connection.setRequestMethod("GET");
                     connection.setConnectTimeout(180000);
