@@ -2,79 +2,66 @@ package com.example.campuscomment;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
+import android.view.View;
 import android.widget.TextView;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.net.HttpURLConnection;
-import java.net.URL;
+import javaclass.cateen;
+
+import java.sql.Array;
+import java.sql.Blob;
+import java.sql.CallableStatement;
+import java.sql.Clob;
+import java.sql.Connection;
+import java.sql.DatabaseMetaData;
+import java.sql.DriverManager;
+import java.sql.NClob;
+import java.sql.PreparedStatement;
+import java.sql.SQLClientInfoException;
+import java.sql.SQLException;
+import java.sql.SQLWarning;
+import java.sql.SQLXML;
+import java.sql.Savepoint;
+import java.sql.Statement;
+import java.sql.Struct;
+import java.util.Map;
+import java.util.Properties;
 
 public class CateenInfoActivity extends AppCompatActivity {
     private TextView cateenname;
-    private TextView address;
+    private TextView cateennum;
+    private TextView myNum;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cateen_info);
-        cateenname=findViewById(R.id.cateenname);
-        address=findViewById(R.id.address);
-        sendRequestWithHttpURLConnection();
-    }
-    private void sendRequestWithHttpURLConnection() {
-        // 开启线程来发起网络请求
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                HttpURLConnection connection = null;
-                BufferedReader reader = null;
-                try {
-                    Log.d("MainActivity", "HttpURLConnection connecting ");
-                    URL url = new URL("https://www.baidu.com");
-                    connection = (HttpURLConnection) url.openConnection();
-                    connection.setRequestMethod("GET");
-                    connection.setConnectTimeout(180000);
-                    connection.setReadTimeout(180000);
-                    InputStream in = connection.getInputStream();
-                    //下面对获取到的输入流进行读取
-                    reader = new BufferedReader(new InputStreamReader(in));
-                    StringBuilder response = new StringBuilder();
-                    String line;
-                    Log.d("MainActivity", "HttpURLConnection get result ");
-                    while ((line = reader.readLine()) != null) {
-                        response.append(line);
-                    }
-                    Log.d("MainActivity", "display result ");
-                    Log.d("MainActivity", response.toString());
-                    showResponse(response.toString());
-                } catch (Exception e) {
-                    e.printStackTrace();
-                } finally {
-                    if (reader != null) {
-                        try {
-                            reader.close();
-                        } catch (IOException e) {
-                            e.printStackTrace();
-                        }
-                    }
-                    if (connection != null) {
-                        connection.disconnect();
-                    }
-                }
-            }
-        }).start();
-    }
-    private void showResponse(final String response) {
-        runOnUiThread(new Runnable() {
-            @Override
-            public void run() {
-                // 在这里进行UI操作，将结果显示到界面上
-                //cateenname.setText(response);
-               // address.setText(response);
-            }
-        });
+
+        //从服务器获取数据
+        cateen c = new cateen();
+        Double mynum = 0.0;
+
+
+        Connection conn = null;
+            //university_db换成你要连接的数据库名称
+            String url = "jdbc:sqlserver://116.204.72.106:3306;DatabaseName=db";
+            //sa，root分别为数据库的账号和密码
+            //conn = DriverManager.getConnection(url, "root", "Database@123");//getConnection(url, "root", "Database@123");
+            System.out.println("success");
+
+            //修改内容
+            cateenname = findViewById(R.id.cateenname);
+            cateennum = findViewById(R.id.othernumber);
+            myNum = findViewById(R.id.myNum);
+            cateenname.setText(c.name);
+            cateennum.setText(c.num.toString());
+            myNum.setText(mynum.toString());
+        }
+
+
+    public void dietInfo(View view) {
+        Intent intent=new Intent(CateenInfoActivity.this,DietInfoActivity.class);
+        //执行意图
+        startActivity(intent);
     }
 }

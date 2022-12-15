@@ -32,29 +32,7 @@
             android:layout_marginTop="20dp"
             android:src="@drawable/cateen1"></ImageView>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            >
-            <TextView
-                android:layout_marginTop="10dp"
-                android:layout_width="120dp"
-                android:layout_height="wrap_content"
-                android:text="地点："
-                android:textSize="40dp"
 
-                ></TextView>
-            <TextView
-                android:id="@+id/address"
-                android:layout_marginTop="10dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="address"
-                android:textSize="40dp"
-
-                ></TextView>
-        </LinearLayout>
         <HorizontalScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -75,7 +53,7 @@
                         android:layout_height="200dp"
                         android:src="@drawable/food1"
                         android:layout_marginLeft="20dp"
-                        android:onClick="cateenInfo"
+                        android:onClick="dietInfo"
                         ></ImageView>
                     <TextView
                         android:layout_width="wrap_content"
@@ -153,7 +131,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
-                android:text="他人评分："
+                android:text="大众评分："
                 android:textSize="40dp"
 
                 ></TextView>
@@ -178,16 +156,16 @@
                 android:layout_height="wrap_content"
                 android:text="我的评分："
                 android:textSize="40dp"
-
                 ></TextView>
+
             <EditText
-                android:layout_marginTop="10dp"
+                android:id="@+id/myNum"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-
-                android:hint="请输入评分"
-
-
+                android:layout_marginTop="10dp"
+                android:inputType="number"
+                android:hint="请输入评分(0-5)"
+                android:textSize="40dp"
                 ></EditText>
         </LinearLayout>
     </LinearLayout>

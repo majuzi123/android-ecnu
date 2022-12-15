@@ -23,7 +23,6 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
             android:orientation="horizontal">
             <ImageView
                 android:layout_width="0dp"
@@ -52,7 +51,6 @@
                     android:drawableLeft="@android:drawable/ic_menu_search"
                     android:singleLine="true"
                     android:imeOptions="actionSearch"
-                    android:onClick="searchview"
                     />
                 <Button
                     android:id="@+id/btn_search"
@@ -61,6 +59,7 @@
                     android:layout_weight="1"
                     android:text="搜索"
                     android:textSize="18sp"
+                    android:onClick="searchview"
 
                     />
             </LinearLayout>
@@ -78,15 +77,16 @@
         android:layout_marginLeft="20dp"
         android:orientation="horizontal">
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
            android:src="@drawable/canteen"
             ></ImageView>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="食堂"
-            android:textSize="40dp"
+            android:textSize="20dp"
+            android:layout_marginTop="15dp"
             ></TextView>
     </LinearLayout>
     <HorizontalScrollView
@@ -173,15 +173,16 @@
             android:layout_marginLeft="20dp"
             android:orientation="horizontal">
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
                 android:src="@drawable/canteen"
                 ></ImageView>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="菜系"
-                android:textSize="40dp"
+                android:textSize="20dp"
+                android:layout_marginTop="15dp"
                 ></TextView>
         </LinearLayout>
         <HorizontalScrollView
@@ -286,14 +287,17 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
 
+
         >
         <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:src="@drawable/praise"
             android:onClick="dailyinfo"
             ></ImageView>
         <TextView
+            android:layout_gravity="center_horizontal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="每日精选"
