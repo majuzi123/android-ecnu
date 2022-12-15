@@ -15,9 +15,6 @@
         android:theme="@style/Theme.CampusComment"
         tools:targetApi="31">
         <activity
-            android:name=".DatabaseActivity"
-            android:exported="false" />
-        <activity
             android:name=".CateenInfoActivity"
             android:exported="false" />
         <activity
@@ -32,11 +29,6 @@
         <activity
             android:name=".IndexActivity"
             android:exported="false" />
-        <activity
-            android:name=".ZhuceActivity"
-            android:exported="false">
-
-        </activity>
         <activity
             android:name=".MainActivity"
             android:exported="true">

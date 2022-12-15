@@ -10,10 +10,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import androidx.annotation.WorkerThread;
 import androidx.appcompat.app.AppCompatActivity;
-
-import java.util.Map;
 
 public class DengluActivity extends AppCompatActivity {
     private Button loginBtn;
@@ -53,16 +50,16 @@ public class DengluActivity extends AppCompatActivity {
                             Bundle b = m.getData();
                             String name = b.getString("n");
                             String pwd = b.getString("p");
-                            DatabaseForLogIn db = new DatabaseForLogIn();
-                            String ret = db.Query(name,pwd);
+                            DatabaseForUse db = new DatabaseForUse();
+                            String ret = db.QueryForLogin(name,pwd);
                             if(ret.equals("1")){
-                                Toast.makeText(DengluActivity.this, "验证成功！", Toast.LENGTH_LONG).show();
+                                Toast.makeText(DengluActivity.this, "登录成功！", Toast.LENGTH_LONG).show();
                                 Intent intent=new Intent(DengluActivity.this,IndexActivity.class);
                                 //执行意图
                                 startActivity(intent);
                                 return;
                             }
-                            Toast.makeText(DengluActivity.this, "验证失败！", Toast.LENGTH_LONG).show();
+                            Toast.makeText(DengluActivity.this, "登录失败！", Toast.LENGTH_LONG).show();
                             break;
                     }
                 }

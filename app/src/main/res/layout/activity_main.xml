@@ -31,15 +31,6 @@
         android:onClick="myclick1"
         android:layout_gravity="center"
         ></Button>
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="注册"
-        android:textSize="30sp"
-        android:layout_marginTop="20dp"
-        android:onClick="myclick3"
-        android:layout_gravity="center"
-        ></Button>
 
 
 </LinearLayout>

@@ -33,16 +33,5 @@ public class MainActivity extends AppCompatActivity {
         Intent intent=new Intent(MainActivity.this,DengluActivity.class);
         //执行意图
         startActivity(intent);
-
     }
-
-
-
-    public void myclick3(View view) {
-        Intent intent=new Intent(MainActivity.this,ZhuceActivity.class);
-        //执行意图
-        startActivity(intent);
-    }
-
-
 }

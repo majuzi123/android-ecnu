@@ -1,37 +1,31 @@
 package com.example.campuscomment;
 
-import android.content.Intent;
-import android.os.Bundle;
-
 import androidx.appcompat.app.AppCompatActivity;
-
-import com.mysql.jdbc.MySQLConnection;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.SQLOutput;
 
-public class DatabaseForLogIn extends AppCompatActivity {
+public class DatabaseForUse extends AppCompatActivity {
     private String driver = "com.mysql.jdbc.Driver";
     private String dbURL = "jdbc:mysql://116.204.72.106:3306/db";
     private String user = "root";
     private String password = "Database@123";
     private String uName = null;
     private String uPwd = null;
-    DatabaseForLogIn(){}
-    public DatabaseForLogIn(String n,String p){
+    DatabaseForUse(){}
+    public DatabaseForUse(String n, String p){
         this.uName = n;
         this.uPwd = p;
     }
-    private static DatabaseForLogIn connection = null;
+    private static DatabaseForUse connection = null;
     public static Connection getConnection(){
         Connection conn = null;
         if(connection == null){
             try{
-                connection = new DatabaseForLogIn();
+                connection = new DatabaseForUse();
             } catch (Exception e){
                 e.printStackTrace();
                 return null;
@@ -52,7 +46,7 @@ public class DatabaseForLogIn extends AppCompatActivity {
         }
         return conn;
     }
-    public String Query(String name,String pwd){
+    public String QueryForLogin(String name,String pwd){
         String result = "";
         try{
             Connection conn = getConnection();
@@ -69,6 +63,32 @@ public class DatabaseForLogIn extends AppCompatActivity {
         } catch (Exception e){
             e.printStackTrace();
             result += "error!";
+        }
+        return result;
+    }
+    public String QueryForSearch(String sth){
+        String result = "";
+        float rank;
+        try{
+            Connection conn = getConnection();
+            if(conn != null) {
+                String sql = "select * from meal where name = '" + sth + "'";
+                PreparedStatement stmt = conn.prepareStatement(sql);
+                ResultSet rs = stmt.executeQuery();
+                while (rs.next()) {
+                    result += rs.getString("name");
+                    result += " ";
+                    result += rs.getString("address");
+                    result += " ";
+                    rank = rs.getFloat("rank");
+                    result += Float.toString(rank);
+                    break;
+                }
+                rs.close();
+                conn.close();
+            }
+        } catch (Exception e){
+            e.printStackTrace();
         }
         return result;
     }
