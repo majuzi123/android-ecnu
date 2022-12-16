@@ -76,6 +76,24 @@
 
              ></TextView>
      </LinearLayout>
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         >
+         <EditText
+             android:id="@+id/edit_mark"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:hint="输入你的评分"/>
+
+     </LinearLayout>
+     <Button
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:id="@+id/mark_button"
+         android:text="评价一下"/>
+
 
  </LinearLayout>
 </ScrollView>

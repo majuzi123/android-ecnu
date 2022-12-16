@@ -100,17 +100,10 @@
                   <TextView
                       android:layout_width="match_parent"
                       android:layout_height="wrap_content"
-                      android:text="披萨"
+                      android:text="韭菜盒子"
                       android:gravity="center"
                       android:textSize="20dp"
                       android:onClick="dietInfo"
-                      ></TextView>
-                  <TextView
-                      android:layout_width="match_parent"
-                      android:layout_height="wrap_content"
-                      android:text="评分：4.0"
-                      android:gravity="center"
-                      android:textSize="20dp"
                       ></TextView>
               </LinearLayout>
               <LinearLayout
@@ -129,17 +122,10 @@
                   <TextView
                       android:layout_width="match_parent"
                       android:layout_height="wrap_content"
-                      android:text="油泼面"
+                      android:text="牛肉面"
                       android:gravity="center"
                       android:textSize="20dp"
                       android:onClick="dietInfo"
-                      ></TextView>
-                  <TextView
-                      android:layout_width="match_parent"
-                      android:layout_height="wrap_content"
-                      android:text="评分：4.2"
-                      android:gravity="center"
-                      android:textSize="20dp"
                       ></TextView>
               </LinearLayout>
           </LinearLayout>
@@ -169,13 +155,6 @@
                       android:textSize="20dp"
                       android:onClick="dietInfo"
                       ></TextView>
-                  <TextView
-                      android:layout_width="match_parent"
-                      android:layout_height="wrap_content"
-                      android:text="评分：3.8"
-                      android:gravity="center"
-                      android:textSize="20dp"
-                      ></TextView>
               </LinearLayout>
               <LinearLayout
                   android:layout_width="match_parent"
@@ -192,17 +171,10 @@
                   <TextView
                       android:layout_width="match_parent"
                       android:layout_height="wrap_content"
-                      android:text="牛肉面"
+                      android:text="兰州拉面"
                       android:gravity="center"
                       android:textSize="20dp"
                       android:onClick="dietInfo"
-                      ></TextView>
-                  <TextView
-                      android:layout_width="match_parent"
-                      android:layout_height="wrap_content"
-                      android:text="评分：4.0"
-                      android:gravity="center"
-                      android:textSize="20dp"
                       ></TextView>
               </LinearLayout>
           </LinearLayout>
@@ -232,13 +204,6 @@
                       android:textSize="20dp"
                       android:onClick="dietInfo"
                       ></TextView>
-                  <TextView
-                      android:layout_width="match_parent"
-                      android:layout_height="wrap_content"
-                      android:text="评分：4.5"
-                      android:gravity="center"
-                      android:textSize="20dp"
-                      ></TextView>
               </LinearLayout>
               <LinearLayout
                   android:layout_width="match_parent"
@@ -260,13 +225,6 @@
                       android:gravity="center"
                       android:textSize="20dp"
                       android:onClick="dietInfo"
-                      ></TextView>
-                  <TextView
-                      android:layout_width="match_parent"
-                      android:layout_height="wrap_content"
-                      android:text="评分：3.9"
-                      android:gravity="center"
-                      android:textSize="20dp"
                       ></TextView>
               </LinearLayout>
           </LinearLayout>

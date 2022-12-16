@@ -69,6 +69,7 @@ public class DatabaseForUse extends AppCompatActivity {
     public String QueryForSearch(String sth){
         String result = "";
         float rank;
+        int mid;
         try{
             Connection conn = getConnection();
             if(conn != null) {
@@ -76,6 +77,9 @@ public class DatabaseForUse extends AppCompatActivity {
                 PreparedStatement stmt = conn.prepareStatement(sql);
                 ResultSet rs = stmt.executeQuery();
                 while (rs.next()) {
+                    mid = rs.getInt("mid");
+                    result += Integer.toString(mid);
+                    result += " ";
                     result += rs.getString("name");
                     result += " ";
                     result += rs.getString("address");
@@ -85,6 +89,24 @@ public class DatabaseForUse extends AppCompatActivity {
                     break;
                 }
                 rs.close();
+                conn.close();
+            }
+        } catch (Exception e){
+            e.printStackTrace();
+        }
+        return result;
+    }
+    public String InsertForMark(String mark){
+        String result = "1";
+        String str[] = mark.split(" ");
+        int uid = Integer.parseInt(str[1]);
+        int mk = Integer.parseInt(str[0]);
+        try{
+            Connection conn = getConnection();
+            if(conn != null) {
+                String sql = "INSERT INTO mealcomm (mid,comment) values ("+uid+","+mk+")";
+                PreparedStatement stmt = conn.prepareStatement(sql);
+                stmt.execute(sql);
                 conn.close();
             }
         } catch (Exception e){
